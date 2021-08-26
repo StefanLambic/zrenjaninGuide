@@ -1,0 +1,146 @@
+/*VARIABLE*/
+:root {
+  --primary: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --transition: 0.3s ease;
+  --padding: 100px 0;
+  --darkGray: hsl(300, 1%, 23%);
+  --lightGray: rgb(174, 175, 175);
+}
+
+/*GLOBAL SETTINGS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 16px;
+  font-family: monospace;
+  line-height: 1.6;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+/*NAVIGATION*/
+nav {
+  background: hsl(0, 13%, 11%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 7px 0;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav a {
+  color: var(--lightGray);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding: 0 30px;
+  font-weight: 300;
+}
+nav a:hover {
+  color: var(--white);
+}
+nav .logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+/*HEADER*/
+.header-container {
+  width: 80%;
+  margin: auto;
+}
+header {
+  background-image: linear-gradient(
+      rgba(214, 240, 240, 0.8),
+      rgba(29, 30, 31, 0.8)
+    ),
+    url(slike/zrenjanin1.jpg);
+  height: 95vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  text-align: center;
+}
+header h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+header h1 span {
+  font-style: italic;
+  font-weight: 400;
+}
+header p {
+  padding: 30px 0;
+  font-size: 1.25rem;
+}
+
+/*BUTTONS*/
+.btn {
+  padding: 15px 30px;
+  border: 1px solid var(--white);
+  background: transparent;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--white);
+  border-radius: 7px;
+}
+.btn:hover {
+  cursor: pointer;
+  transition: var(--transition);
+  background: hsla(78, 91%, 78%, 0.329);
+  color: var(--white);
+}
+
+/*SECTION*/
+.zrenjanin-pictures {
+  background: var(--white);
+  padding: 70px 0;
+}
+.zrenjanin-pictures h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.zrenjanin-pictures h2 + p {
+  text-align: center;
+  font-size: 1.3rem;
+  padding-bottom: 30px;
+}
+.zrenjanin-pictures .col {
+  width: 33%;
+  float: left;
+}
+.zrenjanin-pictures img {
+  width: 100%;
+  transform: transform 0.9s;
+}
+.zrenjanin-pictures img:hover {
+  -ms-transform: scale(0.93);
+  -webkit-transform: scale(0.93);
+  transform: scale (0.93);
+}
+.zrenjanin-pictures .col div {
+  margin: 30px;
+}
